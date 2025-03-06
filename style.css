@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -7,6 +8,13 @@ body {
     color: #333;
 }
 
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
 header {
     background: #333;
     color: #fff;
@@ -18,49 +26,186 @@ header h1 {
     margin: 0;
 }
 
-nav {
-    margin-top: 1rem;
-}
-
 nav a {
     color: #fff;
     margin: 0 1rem;
     text-decoration: none;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
 .hero {
     background: url('hero-image.jpg') no-repeat center center/cover;
     color: #fff;
-    padding: 2rem;
+    padding: 4rem 0;
     text-align: center;
 }
 
 .hero h2 {
     margin: 0;
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
 }
 
 .cta-button {
     background: #ff6600;
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.5rem;
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
     margin-top: 1rem;
 }
 
+.cta-button:hover {
+    background: #e65c00;
+}
+
+/* Services Section */
 .services {
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem;
+    padding: 2rem 0;
     background: #fff;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
 }
 
 .service {
     text-align: center;
-    width: 30%;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Calculator Section */
+.calculator {
+    padding: 2rem 0;
+    background: #f4f4f4;
+}
+
+.calculator h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group select, .form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background: #ff6600;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background: #e65c00;
+}
+
+#result {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+}
+
+#estimatedCost {
+    color: #ff6600;
+    font-weight: bold;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 2rem 0;
+    background: #fff;
+}
+
+.gallery h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+    padding: 2rem 0;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
     background: #333;
     color: #fff;
@@ -72,4 +217,8 @@ footer {
 footer a {
     color: #ff6600;
     text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
