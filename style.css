@@ -1,0 +1,104 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for Header */
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Paragraph Styles */
+p {
+    line-height: 1.6;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Link Styling */
+a {
+    color: #007BFF; /* Bright blue */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Make the link look like a button */
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745; /* Green */
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #218838;
+}
+
+/* Blog Post Styles */
+.blog-post {
+    margin-bottom: 40px;
+}
+
+.blog-post h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    font-size: 16px;
+    color: #666;
+}
+
+.blog-post a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #17a2b8;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.blog-post a:hover {
+    background-color: #138496;
+}
