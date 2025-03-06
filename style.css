@@ -10,13 +10,14 @@ body {
 
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 /* Header */
 header {
-    background: #333;
+    background: #2c3e50;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -38,10 +39,12 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
+    background: #3498db;
     color: #fff;
-    padding: 4rem 0;
+    padding: 2rem;
     text-align: center;
+    border-radius: 10px;
+    margin-bottom: 2rem;
 }
 
 .hero h2 {
@@ -55,7 +58,7 @@ nav a:hover {
 }
 
 .cta-button {
-    background: #ff6600;
+    background: #e67e22;
     color: #fff;
     padding: 0.75rem 1.5rem;
     text-decoration: none;
@@ -65,13 +68,16 @@ nav a:hover {
 }
 
 .cta-button:hover {
-    background: #e65c00;
+    background: #d35400;
 }
 
 /* Services Section */
 .services {
-    padding: 2rem 0;
     background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
 }
 
 .services h2 {
@@ -101,8 +107,11 @@ nav a:hover {
 
 /* Calculator Section */
 .calculator {
-    padding: 2rem 0;
-    background: #f4f4f4;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
 }
 
 .calculator h2 {
@@ -130,7 +139,7 @@ nav a:hover {
 }
 
 button {
-    background: #ff6600;
+    background: #e67e22;
     color: #fff;
     padding: 0.75rem 1.5rem;
     border: none;
@@ -141,7 +150,7 @@ button {
 }
 
 button:hover {
-    background: #e65c00;
+    background: #d35400;
 }
 
 #result {
@@ -151,14 +160,17 @@ button:hover {
 }
 
 #estimatedCost {
-    color: #ff6600;
+    color: #e67e22;
     font-weight: bold;
 }
 
 /* Gallery Section */
 .gallery {
-    padding: 2rem 0;
     background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
 }
 
 .gallery h2 {
@@ -169,7 +181,7 @@ button:hover {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
 }
 
@@ -177,37 +189,25 @@ button:hover {
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
 }
 
-.gallery-grid img:hover {
-    transform: scale(1.05);
+/* Testimonials Section */
+.testimonial {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
 }
 
-/* Contact Section */
-.contact {
-    padding: 2rem 0;
-    background: #f4f4f4;
+.video {
+    margin-top: 2rem;
     text-align: center;
-}
-
-.contact h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
-
-.contact a {
-    color: #ff6600;
-    text-decoration: none;
-}
-
-.contact a:hover {
-    text-decoration: underline;
 }
 
 /* Footer */
 footer {
-    background: #333;
+    background: #2c3e50;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
@@ -215,7 +215,7 @@ footer {
 }
 
 footer a {
-    color: #ff6600;
+    color: #e67e22;
     text-decoration: none;
 }
 
