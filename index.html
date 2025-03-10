@@ -123,8 +123,14 @@
     <script>
         function calculatePrice() {
             const serviceType = document.getElementById('serviceType').value;
-            const propertySize = document.getElementById('propertySize').value;
+            const propertySize = parseFloat(document.getElementById('propertySize').value);
             const gutterService = document.getElementById('gutterService').checked;
+
+            // Validate property size input
+            if (isNaN(propertySize)) {
+                alert("Please enter a valid number for property size.");
+                return;
+            }
 
             let basePrice = 0;
             if (serviceType === 'inside-outside') basePrice = 0.13; // $0.13 per sq. ft.
@@ -137,11 +143,18 @@
 
             let totalCost = basePrice * propertySize;
 
-            // Apply $150 discount if gutter service is combined with window cleaning
+            // Add gutter service cost if selected
             if (gutterService && (serviceType === 'inside-outside' || serviceType === 'outside-only')) {
-                totalCost += (0.07 * propertySize) - 150;
+                totalCost += (0.07 * propertySize) - 150; // Apply $150 discount
             }
 
+            // Apply minimum fee of $150
+            const minimumFee = 150;
+            if (totalCost < minimumFee) {
+                totalCost = minimumFee;
+            }
+
+            // Display the result
             document.getElementById('estimatedCost').textContent = `$${totalCost.toFixed(2)}`;
         }
     </script>
