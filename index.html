@@ -150,11 +150,11 @@
 
             // Add gutter service cost if selected
             if (gutterService && (serviceType === 'inside-outside' || serviceType === 'outside-only')) {
-                totalCost += (0.07 * propertySize) - 150; // Apply $150 discount
+                totalCost += (0.07 * propertySize) - 150; // Apply $50 discount
             }
 
-            // Apply minimum fee of $150
-            const minimumFee = 150;
+            // Apply minimum fee of $50
+            const minimumFee = 50;
             if (totalCost < minimumFee) {
                 totalCost = minimumFee;
             }
