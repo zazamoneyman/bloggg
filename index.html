@@ -138,8 +138,8 @@
             }
 
             let basePrice = 0;
-            if (serviceType === 'inside-outside') basePrice = 0.13; // $0.13 per sq. ft.
-            else if (serviceType === 'outside-only') basePrice = 0.07; // $0.07 per sq. ft.
+            if (serviceType === 'inside-outside') basePrice = 0.15; // $0.15 per sq. ft.
+            else if (serviceType === 'outside-only') basePrice = 0.08; // $0.08 per sq. ft.
             else if (serviceType === 'gutter') basePrice = 0.07; // $0.07 per sq. ft.
             else if (serviceType === 'construction' || serviceType === 'commercial') {
                 alert("Please contact us for an onsite estimate.");
@@ -153,8 +153,8 @@
                 totalCost += (0.07 * propertySize) - 150; // Apply $50 discount
             }
 
-            // Apply minimum fee of $50
-            const minimumFee = 50;
+            // Apply minimum fee of $175
+            const minimumFee = 175;
             if (totalCost < minimumFee) {
                 totalCost = minimumFee;
             }
